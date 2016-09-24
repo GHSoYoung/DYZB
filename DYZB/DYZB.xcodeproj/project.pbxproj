@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CC4149181D96CC2C0069354D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4149171D96CC2C0069354D /* AppDelegate.swift */; };
-		CC41491A1D96CC2C0069354D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4149191D96CC2C0069354D /* ViewController.swift */; };
 		CC41491D1D96CC2C0069354D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC41491B1D96CC2C0069354D /* Main.storyboard */; };
 		CC41491F1D96CC2C0069354D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC41491E1D96CC2C0069354D /* Assets.xcassets */; };
 		CC4149221D96CC2C0069354D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4149201D96CC2C0069354D /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		CC4149141D96CC2C0069354D /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4149171D96CC2C0069354D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CC4149191D96CC2C0069354D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CC41491C1D96CC2C0069354D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC41491E1D96CC2C0069354D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC4149211D96CC2C0069354D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,69 @@
 		CC4149161D96CC2C0069354D /* DYZB */ = {
 			isa = PBXGroup;
 			children = (
+				CC4149291D96D3DC0069354D /* Classes */,
 				CC4149171D96CC2C0069354D /* AppDelegate.swift */,
-				CC4149191D96CC2C0069354D /* ViewController.swift */,
 				CC41491B1D96CC2C0069354D /* Main.storyboard */,
 				CC41491E1D96CC2C0069354D /* Assets.xcassets */,
 				CC4149201D96CC2C0069354D /* LaunchScreen.storyboard */,
 				CC4149231D96CC2C0069354D /* Info.plist */,
 			);
 			path = DYZB;
+			sourceTree = "<group>";
+		};
+		CC4149291D96D3DC0069354D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CC41492D1D96D3DC0069354D /* Main-主要 */,
+				CC41492B1D96D3DC0069354D /* Home-首页 */,
+				CC41492C1D96D3DC0069354D /* Live-直播 */,
+				CC41492A1D96D3DC0069354D /* Fllow-关注 */,
+				CC41492E1D96D3DC0069354D /* Profile-我 */,
+				CC41492F1D96D3DC0069354D /* Tools-工具 */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CC41492A1D96D3DC0069354D /* Fllow-关注 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Fllow-关注";
+			sourceTree = "<group>";
+		};
+		CC41492B1D96D3DC0069354D /* Home-首页 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Home-首页";
+			sourceTree = "<group>";
+		};
+		CC41492C1D96D3DC0069354D /* Live-直播 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Live-直播";
+			sourceTree = "<group>";
+		};
+		CC41492D1D96D3DC0069354D /* Main-主要 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Main-主要";
+			sourceTree = "<group>";
+		};
+		CC41492E1D96D3DC0069354D /* Profile-我 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Profile-我";
+			sourceTree = "<group>";
+		};
+		CC41492F1D96D3DC0069354D /* Tools-工具 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Tools-工具";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +188,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC41491A1D96CC2C0069354D /* ViewController.swift in Sources */,
 				CC4149181D96CC2C0069354D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
