@@ -14,6 +14,13 @@
 		CC41491D1D96CC2C0069354D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC41491B1D96CC2C0069354D /* Main.storyboard */; };
 		CC41491F1D96CC2C0069354D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC41491E1D96CC2C0069354D /* Assets.xcassets */; };
 		CC4149221D96CC2C0069354D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4149201D96CC2C0069354D /* LaunchScreen.storyboard */; };
+		CC6DCA131DA7A6AD0040ACDD /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DCA121DA7A6AD0040ACDD /* RecommendViewController.swift */; };
+		CC6DCA161DA7BB430040ACDD /* CollectionHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DCA141DA7BB430040ACDD /* CollectionHeadView.swift */; };
+		CC6DCA171DA7BB430040ACDD /* CollectionHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC6DCA151DA7BB430040ACDD /* CollectionHeadView.xib */; };
+		CC6DCA1A1DA7D2900040ACDD /* CollectionViewNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DCA181DA7D2900040ACDD /* CollectionViewNormalCell.swift */; };
+		CC6DCA1B1DA7D2900040ACDD /* CollectionViewNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC6DCA191DA7D2900040ACDD /* CollectionViewNormalCell.xib */; };
+		CC6DCA1E1DA7ED350040ACDD /* CollectionPrettyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DCA1C1DA7ED350040ACDD /* CollectionPrettyViewCell.swift */; };
+		CC6DCA1F1DA7ED350040ACDD /* CollectionPrettyViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC6DCA1D1DA7ED350040ACDD /* CollectionPrettyViewCell.xib */; };
 		CC8786B71D9AC2BA00E8A528 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8786B61D9AC2BA00E8A528 /* Common.swift */; };
 		CCC2F81D1D96DDBF00B328AC /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC2F81B1D96DDBF00B328AC /* Home.storyboard */; };
 		CCC2F8211D96DE1B00B328AC /* Fllow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC2F8201D96DE1B00B328AC /* Fllow.storyboard */; };
@@ -34,6 +41,13 @@
 		CC41491E1D96CC2C0069354D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC4149211D96CC2C0069354D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC4149231D96CC2C0069354D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC6DCA121DA7A6AD0040ACDD /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		CC6DCA141DA7BB430040ACDD /* CollectionHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeadView.swift; sourceTree = "<group>"; };
+		CC6DCA151DA7BB430040ACDD /* CollectionHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeadView.xib; sourceTree = "<group>"; };
+		CC6DCA181DA7D2900040ACDD /* CollectionViewNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewNormalCell.swift; sourceTree = "<group>"; };
+		CC6DCA191DA7D2900040ACDD /* CollectionViewNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewNormalCell.xib; sourceTree = "<group>"; };
+		CC6DCA1C1DA7ED350040ACDD /* CollectionPrettyViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionPrettyViewCell.swift; sourceTree = "<group>"; };
+		CC6DCA1D1DA7ED350040ACDD /* CollectionPrettyViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionPrettyViewCell.xib; sourceTree = "<group>"; };
 		CC8786B61D9AC2BA00E8A528 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		CCC2F81C1D96DDBF00B328AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
 		CCC2F8201D96DE1B00B328AC /* Fllow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Fllow.storyboard; path = "DYZB/Classes/Fllow-关注/Fllow.storyboard"; sourceTree = SOURCE_ROOT; };
@@ -174,6 +188,10 @@
 			children = (
 				CC3BFE811D9809A6001952A7 /* PageTitleView.swift */,
 				CC1B44A91D9BF51700558288 /* PageContentView.swift */,
+				CC6DCA181DA7D2900040ACDD /* CollectionViewNormalCell.swift */,
+				CC6DCA191DA7D2900040ACDD /* CollectionViewNormalCell.xib */,
+				CC6DCA1C1DA7ED350040ACDD /* CollectionPrettyViewCell.swift */,
+				CC6DCA1D1DA7ED350040ACDD /* CollectionPrettyViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,6 +201,7 @@
 			children = (
 				CCC2F81B1D96DDBF00B328AC /* Home.storyboard */,
 				CCC2F8421D96F2A100B328AC /* HomeViewController.swift */,
+				CC6DCA121DA7A6AD0040ACDD /* RecommendViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -197,6 +216,8 @@
 		CCC2F8311D96E6D500B328AC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CC6DCA141DA7BB430040ACDD /* CollectionHeadView.swift */,
+				CC6DCA151DA7BB430040ACDD /* CollectionHeadView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -281,11 +302,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "古古辉";
 				TargetAttributes = {
 					CC4149131D96CC2C0069354D = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -312,12 +334,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC6DCA171DA7BB430040ACDD /* CollectionHeadView.xib in Resources */,
 				CCC2F83E1D96E94500B328AC /* Porfile.storyboard in Resources */,
 				CC4149221D96CC2C0069354D /* LaunchScreen.storyboard in Resources */,
 				CC41491F1D96CC2C0069354D /* Assets.xcassets in Resources */,
 				CCC2F83C1D96E8F300B328AC /* Live.storyboard in Resources */,
+				CC6DCA1B1DA7D2900040ACDD /* CollectionViewNormalCell.xib in Resources */,
 				CC41491D1D96CC2C0069354D /* Main.storyboard in Resources */,
 				CCC2F81D1D96DDBF00B328AC /* Home.storyboard in Resources */,
+				CC6DCA1F1DA7ED350040ACDD /* CollectionPrettyViewCell.xib in Resources */,
 				CCC2F8211D96DE1B00B328AC /* Fllow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,11 +356,15 @@
 			files = (
 				CC1B44AC1D9BF92F00558288 /* UIColor-Exntension.swift in Sources */,
 				CC4149181D96CC2C0069354D /* AppDelegate.swift in Sources */,
+				CC6DCA131DA7A6AD0040ACDD /* RecommendViewController.swift in Sources */,
 				CCC2F82E1D96E6B200B328AC /* MainViewController.swift in Sources */,
 				CC3BFE821D9809A6001952A7 /* PageTitleView.swift in Sources */,
+				CC6DCA1A1DA7D2900040ACDD /* CollectionViewNormalCell.swift in Sources */,
 				CC1B44AA1D9BF51700558288 /* PageContentView.swift in Sources */,
 				CCC2F8411D96EF9C00B328AC /* UIBarButtonItem-Exnetsion.swift in Sources */,
+				CC6DCA1E1DA7ED350040ACDD /* CollectionPrettyViewCell.swift in Sources */,
 				CC8786B71D9AC2BA00E8A528 /* Common.swift in Sources */,
+				CC6DCA161DA7BB430040ACDD /* CollectionHeadView.swift in Sources */,
 				CCC2F8431D96F2A100B328AC /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,8 +424,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -440,8 +471,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -460,6 +493,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -475,6 +509,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GuHui.com.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -489,6 +524,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GuHui.com.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

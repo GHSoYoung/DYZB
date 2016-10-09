@@ -11,8 +11,9 @@ import UIKit
 let gStatusBarH : CGFloat = 20
 /// 导航栏高度
 let gNavigationBarH : CGFloat =  44
-
+/// 标签栏高度
+let gTabBarH:CGFloat = 44
 /// 屏幕宽度
-let gScreenW = UIScreen.mainScreen().bounds.width
+let gScreenW = UIScreen.main.bounds.width
 /// 屏幕高度
-let gScreenH = UIScreen.mainScreen().bounds.height
+let gScreenH = UIScreen.main.bounds.height

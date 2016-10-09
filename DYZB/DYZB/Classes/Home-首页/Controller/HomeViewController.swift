@@ -12,7 +12,7 @@ import UIKit
 private let gTitleViewH : CGFloat = 40
 class HomeViewController: UIViewController {
 //MARK:- 懒加载属性
-    private lazy var pageTitleView : PageTitleView = {[weak self] in
+    fileprivate lazy var pageTitleView : PageTitleView = {[weak self] in
         let titleFrame = CGRect(x: 0, y: gStatusBarH + gNavigationBarH, width: gScreenW, height: gTitleViewH)
         let titles = ["推荐","游戏","娱乐","趣玩"]
         let titleView = PageTitleView(frame: titleFrame, titles: titles)
@@ -20,13 +20,13 @@ class HomeViewController: UIViewController {
         return titleView
     }()
     
-    private lazy var pageContentView : PageContentView = {[weak self] in
-        let contentH = gScreenH - gStatusBarH - gNavigationBarH - gTitleViewH
+    fileprivate lazy var pageContentView : PageContentView = {[weak self] in
+        let contentH = gScreenH - gStatusBarH - gNavigationBarH - gTitleViewH - gTabBarH
         let contentF = CGRect(x: 0, y: gStatusBarH + gNavigationBarH + gTitleViewH, width: gScreenW, height:contentH)
         // 创建控制器
         var childVcs = [UIViewController]()
-        
-        for _ in 0..<4{
+        childVcs.append(RecommendViewController())
+        for _ in 0..<3{
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor(r:  CGFloat (Float(arc4random_uniform(255))), g: CGFloat (Float(arc4random_uniform(255))), b: CGFloat (Float(arc4random_uniform(255))))
             childVcs.append(vc)
@@ -43,25 +43,24 @@ class HomeViewController: UIViewController {
         automaticallyAdjustsScrollViewInsets = false
     // 设置UI界面
      setUpUI()
-        // Do any additional setup after loading the view.
     }
 }
 //MARK:- 设置UI界面
 extension HomeViewController {
-    private func setUpUI() {
+    fileprivate func setUpUI() {
         // 设置导航栏
         setUpNavBar()
         // 添加标题栏
         view.addSubview(pageTitleView)
         // 添加内容View
         view.addSubview(pageContentView)
-        pageContentView.backgroundColor = UIColor.blueColor()
+        pageContentView.backgroundColor = UIColor.blue
     }
     /// 设置导航栏
-    private func setUpNavBar() {
+    fileprivate func setUpNavBar() {
         let size = CGSize(width: 40, height: 40)
         // 设置左侧的btn
-        navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "homeLogoIcon",highImageName: "homeLogoIcon",target:nil,action: nil)
+      
         // 设置右侧的btn
         let historyBtn = UIBarButtonItem(imageName: "viewHistoryIcon", size:size,target:self,action:#selector(historyBtnClick))
         let scanBtn = UIBarButtonItem(imageName: "scanIcon", size:size,target:self,action:#selector(scanBtnClick) )
@@ -72,27 +71,27 @@ extension HomeViewController {
 //MARK:- 事件监听
 extension HomeViewController{
     /// historyBtn点击方法
-    @objc private func historyBtnClick() {
+    @objc fileprivate func historyBtnClick() {
         print("historyBtnClick")
     }
     /// scanBtn点击方法
-    @objc private func scanBtnClick() {
+    @objc fileprivate func scanBtnClick() {
         print("scanBtnClick")
     }
     /// searchBtn点击方法
-    @objc private func searchBtnClick() {
+    @objc fileprivate func searchBtnClick() {
         print("searchBtnClick")
     }
 }
 //MARK:- 遵守协议PageTitleView代理
 extension HomeViewController:PageTitleViewDelegate{
-    func pageTitleView(titleView: PageTitleView, selectedIndex: Int) {
+    func pageTitleView(_ titleView: PageTitleView, selectedIndex: Int) {
         pageContentView.setCurrentIndex(selectedIndex)
     }
 }
 //MARK:- 遵守协议PageContentView代理
 extension HomeViewController:PageContentViewDelegate{
-    func pageContentView(contenyView:PageContentView,progress:CGFloat,sourceIndex:Int,targetIndex:Int){
+    func pageContentView(_ contenyView:PageContentView,progress:CGFloat,sourceIndex:Int,targetIndex:Int){
       pageTitleView.setPageTitleViewScollLineIndex(progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
     }
 }

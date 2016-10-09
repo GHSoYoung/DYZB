@@ -9,17 +9,17 @@
 import UIKit
 extension UIBarButtonItem {
     // 便利构造函数
-    convenience init(imageName:String,highImageName:String = "", size:CGSize = CGSizeZero,target:AnyObject?,action:Selector) {
-        let btn = UIButton(type: .Custom)
-        btn.setImage(UIImage(named:imageName), forState: .Normal)
+    convenience init(imageName:String,highImageName:String = "", size:CGSize = CGSize.zero,target:AnyObject?,action:Selector) {
+        let btn = UIButton(type: .custom)
+        btn.setImage(UIImage(named:imageName), for: UIControlState())
         if highImageName == "" {
-            btn.setImage(UIImage(named:imageName + "HL"), forState: .Highlighted)
-            btn.addTarget(target, action: action, forControlEvents: .TouchUpInside)
+            btn.setImage(UIImage(named:imageName + "HL"), for: .highlighted)
+            btn.addTarget(target, action: action, for: .touchUpInside)
         }else{
-            btn.setImage(UIImage(named:imageName), forState: .Highlighted)
+            btn.setImage(UIImage(named:imageName), for: .highlighted)
         }
         
-        if size == CGSizeZero {
+        if size == CGSize.zero {
             btn.sizeToFit()
         }else{
             btn.bounds.size = size
